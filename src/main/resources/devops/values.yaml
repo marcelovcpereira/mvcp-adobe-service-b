@@ -1,0 +1,18 @@
+marceloServiceB:
+  appName: marcelo-adobe-service-b
+  image:
+    repository: marcelovcpereira/adobe-test:serviceb
+    pullPolicy: IfNotPresent
+  resources:
+    limits:
+      cpu: "1500m"
+      memory: "4096Mi"
+    requests:
+      cpu: "1500m"
+      memory: "4096Mi"
+
+#########################
+# Environment Variables #
+#########################
+  configMap:
+    SERVICE_B_PORT: 8000
