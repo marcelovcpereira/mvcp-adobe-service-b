@@ -15,7 +15,7 @@ spec:
         - image: {{ .Values.marceloServiceB.image.repository }}
           name: {{ .Values.marceloServiceB.appName }}
           env:
-            {{- range $key, $value := .Values.marceloServiceBB.configMap }}
+            {{- range $key, $value := .Values.marceloServiceB.configMap }}
             - name: {{ $key }}
               valueFrom:
                 configMapKeyRef:

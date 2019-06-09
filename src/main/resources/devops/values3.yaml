@@ -1,5 +1,5 @@
 marceloServiceB:
-  appName: marcelo-adobe-service-b
+  appName: marcelo-adobe-service-b3
   image:
     repository: marcelovcpereira/adobe-test:serviceb2
     pullPolicy: IfNotPresent
@@ -15,4 +15,4 @@ marceloServiceB:
 # Environment Variables #
 #########################
   configMap:
-    SERVICE_B_PORT: 8000
+    SERVICE_B_PORT: 8002
